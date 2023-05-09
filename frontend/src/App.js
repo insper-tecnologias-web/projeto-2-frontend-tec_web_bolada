@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Note from "./components/Note";
 import axios from "axios";
 import "./App.css";
+import Appbar from "./components/AppBar";
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -17,8 +18,11 @@ function App() {
 
   return (
     <div className="App">
+      <Appbar/>
+       
       {notes.map((note) => 
       <Note nome = {note.name}> </Note>)}
+      
     </div>
   );
 }

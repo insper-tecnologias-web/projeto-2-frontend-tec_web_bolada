@@ -1,3 +1,14 @@
 .nome{
     margin-left: 10px;
 }
+
+.botao{
+    margin-left: 10px;
+}
+
+.geral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}

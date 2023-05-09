@@ -11,11 +11,12 @@ const addNode = (nome) => {
 
 export default function Note(props) {
   return (
-    <div>
+    <div className="geral">
         <h3>
             {props.nome} 
-            <button className="nome" onClick={() => addNode(props.nome)}>Joguei!</button> 
         </h3>
+            <button className="botao" onClick={() => addNode(props.nome)}>Joguei!</button> 
+        
     </div>
   );
 }
