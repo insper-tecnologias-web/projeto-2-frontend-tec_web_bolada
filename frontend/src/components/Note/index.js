@@ -4,7 +4,7 @@ import axios from "axios";
 
 const addNode = (nome) => {
   axios
-  .post("http://127.0.0.1:8000/games/", {name: nome})
+  .post("https://projeto-2-backend-tecwebbolada-production.up.railway.app/games/", {name: nome})
   .then((response) => {
   })
 }
